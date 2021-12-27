@@ -5,8 +5,8 @@ SOURCE_CSV_PATH = "source.csv"
 
 DEFAULT_CARACTOR = ["ねずこ","たんじろう","ぎゆう","ぜんいつ","いのすけ"]
 
-def read_source(csv_pass:str):
-     if not os.path.exists(csv_pass):
+def read_source(csv_path:str):
+     if not os.path.exists(csv_path):
         print(f"csv_path:{csv_path}が存在しません。")
         write_source(csv_path,DEFOULT_CARACTOR)
         with open(csv_path, mode='r',encoding ="utf-8_sig") as f:
